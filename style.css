@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif;
-    background-color: #0c0b0b;
+    background-color: #000000;
 }
-.container{
+.clock{
     display: flex;
     justify-content: center;
     align-items: center;
