@@ -28,10 +28,10 @@ function updateClock() {
     ampmElem.textContent = ampm;
 }
 
-// Call the updateClock function every second
+
 setInterval(updateClock, 1000);
 
-// Initial call to set the clock when the page loads
+
 updateClock();
 
 
