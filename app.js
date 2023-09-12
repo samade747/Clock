@@ -35,7 +35,7 @@ function updateClock() {
     // Initial call to set the clock when the page loads
     updateClock();
 
-
+}
 
 
 
@@ -88,4 +88,4 @@ function updateClock() {
 //     minutes = minutes < 10 ? '0'+minutes : minutes;
 //     var strTime = hours + ':' + minutes + ' ' + amPmElem;
 //     return strTime;
-//   }
+//  
