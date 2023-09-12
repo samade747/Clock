@@ -1,43 +1,38 @@
 function updateClock() {
-    function updateClock() {
-        const hourElem = document.getElementById("hours");
-        const minuteElem = document.getElementById("minutes");
-        const secondElem = document.getElementById("seconds");
-        const ampmElem = document.getElementById("ampm");
+    const hourElem = document.getElementById("hours");
+    const minuteElem = document.getElementById("minutes");
+    const secondElem = document.getElementById("seconds");
+    const ampmElem = document.getElementById("ampm");
 
-        const date = new Date();
-        let hour = date.getHours();
-        let minute = date.getMinutes();
-        let second = date.getSeconds();
-        let ampm = "AM";
+    const date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+    let ampm = "AM";
 
-        if (hour >= 12) {
-            ampm = "PM";
-        }
-
-        if (hour > 12) {
-            hour -= 12;
-        }
-
-        hour = hour < 10 ? "0" + hour : hour.toString();
-        minute = minute < 10 ? "0" + minute : minute.toString();
-        second = second < 10 ? "0" + second : second.toString();
-
-        hourElem.textContent = hour;
-        minuteElem.textContent = minute;
-        secondElem.textContent = second;
-        ampmElem.textContent = ampm;
+    if (hour >= 12) {
+        ampm = "PM";
     }
 
-    // Call the updateClock function every second
-    setInterval(updateClock, 1000);
+    if (hour > 12) {
+        hour -= 12;
+    }
 
-    // Initial call to set the clock when the page loads
-    updateClock();
+    hour = hour < 10 ? "0" + hour : hour.toString();
+    minute = minute < 10 ? "0" + minute : minute.toString();
+    second = second < 10 ? "0" + second : second.toString();
 
+    hourElem.textContent = hour;
+    minuteElem.textContent = minute;
+    secondElem.textContent = second;
+    ampmElem.textContent = ampm;
 }
 
+// Call the updateClock function every second
+setInterval(updateClock, 1000);
 
+// Initial call to set the clock when the page loads
+updateClock();
 
 
 // const hour =document.querySelector("#hours");
